@@ -7,9 +7,9 @@ espressoCore = "3.7.0"
 activityCompose = "1.13.0"
 kotlin = "2.2.10"
 composeBom = "2026.03.01"
-glimmer = "1.0.0-alpha15"
-glimmerGoogleFonts = "1.0.0-alpha15"
-projected = "1.0.0-alpha10"
+glimmer = "1.0.0-alpha22"
+glimmerGoogleFonts = "1.0.0-alpha22"
+projected = "1.0.0-alpha14"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
