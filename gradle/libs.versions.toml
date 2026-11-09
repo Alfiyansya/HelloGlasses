@@ -10,6 +10,7 @@ composeBom = "2026.03.01"
 glimmer = "1.0.0-alpha22"
 glimmerGoogleFonts = "1.0.0-alpha22"
 projected = "1.0.0-alpha14"
+xrRuntime = "1.1.0-alpha02"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,7 +31,7 @@ androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lif
 androidx-glimmer = { group = "androidx.xr.glimmer", name = "glimmer", version.ref = "glimmer" }
 androidx-glimmer-google-fonts = { group = "androidx.xr.glimmer", name = "glimmer-google-fonts", version.ref = "glimmerGoogleFonts" }
 androidx-projected = { group = "androidx.xr.projected", name = "projected", version.ref = "projected" }
-
+androidx-xr-runtime = { group = "androidx.xr.runtime",name = "runtime", version.ref = "xrRuntime" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
