@@ -21,10 +21,11 @@ Everything here runs on the Android Studio **glasses emulator paired with a phon
 
 | # | Branch | Status | What I built | What I learned |
 |---|---|---|---|---|
-| 1 | [`01-hello-glasses`](../../tree/branch-01-hello-glasses) | ✅ Done | Phone screen with an **Open on Glasses** button that projects a Glimmer "Hello Glasses" screen. The button is enabled only while glasses are connected, and a status line updates live. | Projected activities, `ProjectedContext`, and collecting `isProjectedDeviceConnected` as a lifecycle-aware Flow |
-| 2 | [`02-glasses-permissions`](../../tree/branch-02-glasses-permissions) | ✅ Done | An **Ask for Camera** button on the glasses that requests CAMERA with `ProjectedActivityCompat` | The dialog appears on the **phone**, and the glasses show "check your phone". The grant belongs to the glasses only, so the phone's own CAMERA stays denied. The emulator's touchpad is the strip *under* the display. |
-| 3 | [`03-count-contexts`](../../tree/branch-03-count-contexts) | ✅ Done | A phone status line: device lifecycle state, a projected-context counter and the `deviceId` | Taking the glasses off keeps the same context. Only a reconnect makes a new one, with a new `deviceId`. The emulator can't detect wearing, so sleep stays `STARTED`. |
-
+| 1 | [`01-hello-glasses`](../../tree/01-hello-glasses) | ✅ Done | Phone screen with an **Open on Glasses** button that projects a Glimmer "Hello Glasses" screen. The button is enabled only while glasses are connected, and a status line updates live. | Projected activities, `ProjectedContext`, and collecting `isProjectedDeviceConnected` as a lifecycle-aware Flow |
+| 2 | [`02-glasses-permissions`](../../tree/02-glasses-permissions) | ✅ Done | An **Ask for Camera** button on the glasses that requests CAMERA with `ProjectedActivityCompat` | The dialog appears on the **phone**, and the glasses show "check your phone". The grant belongs to the glasses only, so the phone's own CAMERA stays denied. The emulator's touchpad is the strip *under* the display. |
+| 3 | [`03-count-contexts`](../../tree/03-count-contexts) | ✅ Done | A phone status line: device lifecycle state, a projected-context counter and the `deviceId` | Taking the glasses off keeps the same context. Only a reconnect makes a new one, with a new `deviceId`. The emulator can't detect wearing, so sleep stays `STARTED`. |
+| 4 | [`04-touchpad-focus`](../../tree/04-touchpad-focus) | ✅ Done | A Glimmer `ButtonGroup` (Hello, Camera, Close) that you drive with the touchpad | Tap confirms the focused button, and a swipe moves focus one button with no wrap-around. The wake button belongs to the system. Initial focus goes on the cheapest action. |
+| 5 | `05-display-state` | 🚧 In progress | A seconds counter that pauses while the glasses display is off | |
 
 ## Tech stack
 
