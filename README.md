@@ -25,7 +25,7 @@ Everything here runs on the Android Studio **glasses emulator paired with a phon
 | 2 | [`02-glasses-permissions`](../../tree/02-glasses-permissions) | ✅ Done | An **Ask for Camera** button on the glasses that requests CAMERA with `ProjectedActivityCompat` | The dialog appears on the **phone**, and the glasses show "check your phone". The grant belongs to the glasses only, so the phone's own CAMERA stays denied. The emulator's touchpad is the strip *under* the display. |
 | 3 | [`03-count-contexts`](../../tree/03-count-contexts) | ✅ Done | A phone status line: device lifecycle state, a projected-context counter and the `deviceId` | Taking the glasses off keeps the same context. Only a reconnect makes a new one, with a new `deviceId`. The emulator can't detect wearing, so sleep stays `STARTED`. |
 | 4 | [`04-touchpad-focus`](../../tree/04-touchpad-focus) | ✅ Done | A Glimmer `ButtonGroup` (Hello, Camera, Close) that you drive with the touchpad | Tap confirms the focused button, and a swipe moves focus one button with no wrap-around. The wake button belongs to the system. Initial focus goes on the cheapest action. |
-| 5 | `05-display-state` | 🚧 In progress | A seconds counter that pauses while the glasses display is off | |
+| 5 | [`05-display-state`](../../tree/05-display-state) | ✅ Done | A seconds counter that pauses while the glasses display is off, plus a capability check that speaks on glasses without a display | `VISUALS_ON` off → pause screen-only work, keep its state. `CAPABILITY_VISUAL_UI` never changes for a device, so read it once and close the controller. The audio-glasses path is written but not yet run (Audio-only mode needs a phone cold boot). |
 
 ## Tech stack
 
